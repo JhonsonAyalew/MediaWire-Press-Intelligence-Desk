@@ -1,0 +1,24 @@
+.stat-card {
+  background: var(--paper);
+  color: var(--text-on-paper);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  border: 1px solid var(--paper-line);
+}
+
+.stat-card .eyebrow {
+  color: var(--text-on-paper-dim);
+}
+
+.stat-card__value {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 8px 0 2px;
+  line-height: 1;
+}
+
+.stat-card__hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-on-paper-dim);
+}

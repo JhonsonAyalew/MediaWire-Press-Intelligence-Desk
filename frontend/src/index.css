@@ -1,0 +1,89 @@
+/* ===================================================================
+   MEDIAWIRE — design tokens
+   Concept: a press wire desk. Ink-black workspace, warm paper insets
+   for data cards, a live teletype ticker as the signature element.
+   =================================================================== */
+
+:root {
+  /* color */
+  --ink: #15140f;
+  --ink-raised: #1c1b14;
+  --ink-line: #34321f;
+  --paper: #ede6d3;
+  --paper-dim: #ddd4ba;
+  --paper-line: #c9bd9c;
+  --amber: #d3892f;
+  --amber-deep: #a96a1f;
+  --wire-green: #5ba37f;
+  --rust: #c1532f;
+  --text-on-ink: #ece7d8;
+  --text-on-ink-dim: #9c9582;
+  --text-on-paper: #1f1d14;
+  --text-on-paper-dim: #635d49;
+
+  /* type */
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", monospace;
+
+  --radius: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--text-on-ink);
+  font-family: var(--font-body);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--amber);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-on-ink-dim);
+}
+
+.hairline {
+  border: none;
+  border-top: 1px solid var(--ink-line);
+}
+
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--ink-line); border-radius: 6px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

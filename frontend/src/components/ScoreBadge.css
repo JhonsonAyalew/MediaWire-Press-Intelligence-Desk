@@ -1,0 +1,28 @@
+.score-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.score-badge--none {
+  color: var(--text-on-ink-dim);
+  background: transparent;
+  border: 1px solid var(--ink-line);
+}
+
+.score-badge--high {
+  background: rgba(91, 163, 127, 0.18);
+  color: var(--wire-green);
+}
+
+.score-badge--mid {
+  background: rgba(211, 137, 47, 0.18);
+  color: var(--amber);
+}
+
+.score-badge--low {
+  background: rgba(193, 83, 47, 0.18);
+  color: var(--rust);
+}
