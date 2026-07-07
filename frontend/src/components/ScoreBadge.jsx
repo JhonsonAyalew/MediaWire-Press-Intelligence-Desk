@@ -7,3 +7,4 @@ export default function ScoreBadge({ score }) {
   const level = score >= 4 ? "high" : score >= 3 ? "mid" : "low";
   return <span className={`score-badge score-badge--${level} mono`}>{score}/5</span>;
 }
+
